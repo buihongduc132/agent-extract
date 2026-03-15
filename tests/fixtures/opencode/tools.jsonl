@@ -1,0 +1,6 @@
+{"type":"tool_use","sessionID":"ses_opencode_tools","part":{"toolName":"read","input":{"filePath":"/tmp/read-a.md"},"messageID":"msg-tools"}}
+{"type":"tool_use","sessionID":"ses_opencode_tools","part":{"toolName":"bash","input":{"command":"ls -la"},"messageID":"msg-tools"}}
+{"type":"tool_use","sessionID":"ses_opencode_tools","part":{"toolName":"read","input":{"filePath":"/tmp/read-b.md"},"messageID":"msg-tools"}}
+{"type":"tool_use","sessionID":"ses_opencode_tools","part":{"toolName":"edit","input":{"filePath":"/tmp/write-c.md"},"messageID":"msg-tools"}}
+{"type":"text","timestamp":1000,"sessionID":"ses_opencode_tools","part":{"text":"Done","messageID":"msg-tools"}}
+{"type":"step_finish","timestamp":1500,"sessionID":"ses_opencode_tools","part":{"messageID":"msg-tools"}}

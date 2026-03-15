@@ -1,0 +1,2 @@
+{"type":"text","timestamp":1000,"sessionID":"ses_opencode_last","part":{"text":"First OpenCode text","messageID":"msg-first"}}
+{"type":"text","timestamp":2000,"sessionID":"ses_opencode_last","part":{"text":"Last OpenCode text","messageID":"msg-last"}}

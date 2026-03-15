@@ -1,0 +1,2 @@
+{"type":"text","timestamp":1000,"sessionID":"ses_opencode_final","part":{"text":"Final OpenCode text","messageID":"msg-final"}}
+{"type":"step_finish","timestamp":2500,"sessionID":"ses_opencode_final","part":{"messageID":"msg-final"}}

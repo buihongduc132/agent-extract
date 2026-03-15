@@ -1,0 +1,2 @@
+{"type":"text","timestamp":1000,"sessionID":"ses_opencode_before","part":{"text":"Before finish OpenCode text","messageID":"msg-before"}}
+{"type":"step_finish","timestamp":2000,"sessionID":"ses_opencode_before","part":{"messageID":"msg-before"}}
