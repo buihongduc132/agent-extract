@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Resolve this script's real path (follow symlinks) so relative paths are correct
+REAL_SOURCE="${BASH_SOURCE[0]}"
+while [ -L "$REAL_SOURCE" ]; do
+    REAL_SOURCE="$(cd -P "$(dirname "$REAL_SOURCE")" && \
+        TARGET="$(ls -l "$(basename "$REAL_SOURCE")" | sed 's/.* -> //')" && \
+        if [[ "$TARGET" = /* ]]; then echo "$TARGET"; else echo "$(pwd)/$TARGET"; fi)"
+done
+SCRIPT_DIR="$(cd "$(dirname "$REAL_SOURCE")" && pwd)"
 export PYTHONPATH="${SCRIPT_DIR}/src${PYTHONPATH:+:$PYTHONPATH}"
 
 exec python3 -m agent_extract.cli "$@"
